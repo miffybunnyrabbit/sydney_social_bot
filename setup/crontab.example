@@ -1,0 +1,7 @@
+# Runs the bot every day at 9:00am server-local time.
+# Edit the paths, then install with: crontab -e  (paste this line in)
+#
+# Adjust TZ if your server isn't already in Australia/Sydney time — cron
+# uses the system timezone unless you set TZ on the line itself.
+
+0 9 * * * cd /path/to/sydney_social_bot && /path/to/sydney_social_bot/.venv/bin/python main.py >> logs/run.log 2>&1

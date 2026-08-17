@@ -1,0 +1,120 @@
+# Config for src/discover.py
+#
+# Two discovery techniques, both proven manually before this bot existed:
+#   1. IG search sweep — type a query into IG's own search box, read back
+#      the account results.
+#   2. Collab-tag mining — visit a "hub" account's /tagged/ tab (posts other
+#      accounts tagged them in) and pull @handles out of multi-tag collab
+#      captions. This is how the bulk of the Asian-society accounts in
+#      accounts.yaml were actually found — those clubs don't put "Asian" in
+#      their bio, they show up by tagging each other at shared events.
+#
+# discovery.py rotates through a slice of each list per run (see
+# ROTATE_PER_RUN in .env / src/config.py) so a single daily run doesn't have
+# to hammer IG with 100+ searches — it spreads the full sweep over
+# several days instead.
+
+search_queries:
+  - sydney run club
+  - sydney social club
+  - sydney sports social
+  - sydney young professionals
+  - sydney netball social
+  - sydney trivia social
+  - sydney pickup basketball
+  - sydney beach volleyball social
+  - sydney hiking club
+  - sydney speed friending
+  - sydney bar crawl
+  - sydney party events
+  - sydney silent disco
+  - sydney board games social
+  - sydney dodgeball
+  - sydney touch footy social
+  - sydney climbing social
+  - sydney run crew
+  - sydney singles events
+  - sydney tennis social
+  - sydney padel social
+  - sydney mahjong
+  - sydney run club marathon
+  - sydney weekend run
+  - inner west run club
+  - sydney cbd run crew
+  - sydney quiz trivia night
+  - sydney board game cafe social
+  - sydney karaoke social
+  - sydney brunch club
+  - sydney rooftop party
+  - sydney day party
+  - sydney university social club
+  - unsw social club
+  - sydney pickleball social
+  - pickleball sydney club
+  - unsw pickleball
+  - usyd pickleball
+  - uts pickleball
+  - sydney basketball social
+  - unsw basketball club
+  - usyd basketball society
+  - uts basketball club
+  - usyd sports society
+  - unsw sports society
+  - uts sports society
+  - usyd malaysian society
+  - usyd singaporean society
+  - usyd vietnamese society vsa
+  - unsw malaysian society
+  - unsw singaporean society
+  - unsw vsa
+  - uts malaysian society
+  - uts singaporean society
+  - uts vsa vietnamese
+  - malaysian singaporean society sydney
+  - usyd vsa
+  - uts vsa
+  - sydney malaysian students association
+  - unsw singapore students society
+  - usyd indonesian society
+  - unsw indonesian society
+  - uts indonesian society
+  - usyd chinese students society
+  - unsw chinese students society
+  - usyd korean society
+  - sydney asian young adults
+  - sydney asian social club
+  - sydney chinese young professionals
+  - sydney korean young adults social
+  - kpop social sydney
+  - sydney asian foodies
+  - sydney chinese australian youth network
+
+# Hub accounts whose /tagged/ tab tends to surface a cluster of related
+# clubs at once (e.g. one collab-event photo tagged 15+ UNSW societies).
+# discover.py fetches https://instagram.com/<handle>/tagged/, scrolls a
+# few screens, and regex-extracts @handles out of "Photo by X ... with
+# @a, @b, @c" caption lines.
+tagged_hub_accounts:
+  - chopsticks_usyd
+  - vsausyd
+  - sumahjong
+  - wasabi_usyd
+  - unswkpop
+  - unswhksa
+  - unswmso
+  - community_sydney_japanese
+  - ripple.social.sydney
+  - rnrunclub
+
+# Accounts/keywords that show up constantly but aren't social clubs —
+# filtered out of discovery results automatically. Add to this as you see
+# junk slip through (study-abroad agencies, meme pages, vendors, etc).
+# IMPORTANT: put the handle of whatever Instagram account vb is logged in
+# as here — it shows up in every single search result since you're always
+# "logged in as yourself".
+noise_handles:
+  - about
+  - meta
+  - instagram
+  - threads
+  - nathn_nguyn # the account vb was attached to when this list was built — change if different on your server

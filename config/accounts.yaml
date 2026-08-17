@@ -1,0 +1,391 @@
+accounts:
+- handle: luckytiles.social
+  category: Seed accounts
+  note: Mahjong social club — Sydney/Melbourne/Auckland. 2.6K followers. "no money just good vibes."
+- handle: chopsticks_usyd
+  category: Seed accounts
+  note: Australian Chinese Cultural Appreciation Society (USYD). Social events, new friends, free food.
+    4.2K followers.
+- handle: rnrunclub
+  category: Seed accounts
+  note: Run club — Tuesdays 7pm @ Rhodes The Connection. 7.2K followers.
+- handle: ripple.social.sydney
+  category: Parties / general social
+  note: '"Making Sydney social" — events/plans/people via their own app. 25.1K followers, biggest hub
+    account here, likely cross-promotes many smaller clubs below.'
+- handle: maplesocialclub
+  category: Parties / general social
+  note: Maple Social Club — Sydney. Verified, 27.5K followers.
+- handle: sydney.social.club
+  category: Parties / general social
+  note: Sydney social club — one search hit tagged "Sydney SC Bandung," so verify it's the Australian
+    account before following.
+- handle: thesydneyantisocialclub
+  category: Parties / general social
+  note: '"The Sydney Anti-social Club" — ironic branding, social events.'
+- handle: kaleoevent
+  category: Parties / general social
+  note: Kaleo — Sydney's Friday Latin party.
+- handle: silentdiscossydney
+  category: Parties / general social
+  note: Silent Discos Sydney.
+- handle: sydneybarcrawls
+  category: Parties / general social
+  note: Sydney Bar Crawl.
+- handle: thesydneybarcrawl
+  category: Parties / general social
+  note: Near-duplicate of above — check which is active.
+- handle: sydnightlife20
+  category: Parties / general social
+  note: Sydney Nightlife Events.
+- handle: explore_sydney_2019
+  category: Parties / general social
+  note: Free Events Sydney — general events listing account.
+- handle: december1stparty
+  category: Parties / general social
+  note: '"Sydney''s B Day Party" — recurring annual party brand, niche but on-theme.'
+- handle: sydneybrunchclub
+  category: Brunch / food social
+  note: Sydney Brunch Club.
+- handle: sydney.brunchclub
+  category: Brunch / food social
+  note: Near-duplicate of above — check which is active.
+- handle: sydney.brunch.club
+  category: Brunch / food social
+  note: Another near-duplicate — same caveat.
+- handle: sydneysundaybrunchclub
+  category: Brunch / food social
+  note: Sydney Sunday Brunch Club.
+- handle: thebrunchclub_sydney
+  category: Brunch / food social
+  note: The Brunch Club.
+- handle: sydneypotatorunclub
+  category: Runs
+  note: Sydney Potato Run Club 🥔 — followed by bondibeachrunclub.
+- handle: bondibeachrunclub
+  category: Runs
+  note: Bondi Beach Run Club.
+- handle: sydneymarathonrunners
+  category: Runs
+  note: Sydney Marathon Runners Club — more training-focused than social.
+- handle: runwayweekend
+  category: Runs
+  note: Runway Weekend Sydney.
+- handle: innerwestrunclub
+  category: Runs
+  note: Inner West Run Club.
+- handle: runinnerwest
+  category: Runs
+  note: Also branded "Inner West Run Club" — near-duplicate of above, check which is active.
+- handle: inner_west_running_club
+  category: Runs
+  note: Third inner-west-run handle — same caveat.
+- handle: innerwestwomensrunclub
+  category: Runs
+  note: Inner West Women's Run Club (IWWRC) — women-only.
+- handle: sydneysportandsocial
+  category: Sports / social sport
+  note: Sydney Sport & Social 🇦🇺 — general mixed-sport social league.
+- handle: uss.usyd
+  category: Sports / social sport
+  note: University of Sydney Sports & Social Society.
+- handle: jampickleballclub
+  category: Sports / social sport
+  note: Sydney Social Pickleball Community.
+- handle: sydneypadelsocial
+  category: Sports / social sport
+  note: Padel, social.
+- handle: beachvolleyball_sydney
+  category: Sports / social sport
+  note: Sydney Beach Volleyball.
+- handle: sydneybeachvolleyball
+  category: Sports / social sport
+  note: Near-duplicate of above — check which is active.
+- handle: volleywithmates_syd
+  category: Sports / social sport
+  note: Social Beach Volleyball Sydney.
+- handle: dodgeballsydney
+  category: Sports / social sport
+  note: Dodgeball Sydney League.
+- handle: sydneydodgeball
+  category: Sports / social sport
+  note: Near-duplicate of above — check which is active.
+- handle: sydneyunidodge
+  category: Sports / social sport
+  note: Sydney University Dodgeball.
+- handle: ccchaos.dc
+  category: Sports / social sport
+  note: Chaos Dodgeball Club Sydney.
+- handle: falcons.dodgeball
+  category: Sports / social sport
+  note: Falcons Dodgeball Club Sydney.
+- handle: eastsydney_socialtouchfooty
+  category: Sports / social sport
+  note: Eastern Sydney social touch footy games.
+- handle: sydneyhoopsleague
+  category: Sports / social sport
+  note: Sydney Hoops — Social Basketball League.
+- handle: sydneysocialbasketball
+  category: Sports / social sport
+  note: Sydney Social Basketball.
+- handle: suufa
+  category: Sports / social sport
+  note: Sydney Uni Ultimate Frisbee.
+- handle: fundaypickleballclub
+  category: Pickleball (you like this — extra depth)
+  note: Funday Pickleball Club — Sydney. Verified, 11.7K followers, biggest pickleball account found.
+- handle: sydney.pickleball
+  category: Pickleball (you like this — extra depth)
+  note: Sydney Pickleball Club.
+- handle: auburnpicklebears
+  category: Pickleball (you like this — extra depth)
+  note: PickleBears Pickleball Club — Auburn/Sydney.
+- handle: centralpick_sydney
+  category: Pickleball (you like this — extra depth)
+  note: Central Pick Pickleball Club.
+- handle: pickleball.unsw
+  category: Pickleball (you like this — extra depth)
+  note: UNSW Pickleball Society.
+- handle: utspickleballclub
+  category: Pickleball (you like this — extra depth)
+  note: UTS Pickleball Club.
+- handle: utspickleball
+  category: Pickleball (you like this — extra depth)
+  note: Another UTS pickleball handle — check which is active vs. `utspickleballclub`.
+- handle: unswbasketball
+  category: Basketball (you like this — extra depth)
+  note: UNSW Basketball Club 🏀.
+- handle: uts.basketball
+  category: Basketball (you like this — extra depth)
+  note: UTS Basketball Club.
+- handle: utsbasketball.club
+  category: Basketball (you like this — extra depth)
+  note: Another UTS basketball handle — check which is active vs. `uts.basketball`.
+- handle: sydneyunibasketballclub
+  category: Basketball (you like this — extra depth)
+  note: Sydney University Basketball Club 🏀 — the USYD one.
+- handle: sydneyunilionswbc
+  category: Basketball (you like this — extra depth)
+  note: Sydney Uni Lions Wheelchair Basketball Club.
+- handle: unswnetballclub
+  category: Netball / volleyball at the three unis
+  note: UNSW Netball.
+- handle: utsnetball
+  category: Netball / volleyball at the three unis
+  note: UTS Netball Club.
+- handle: uts_netballclub
+  category: Netball / volleyball at the three unis
+  note: Newer/second UTS netball handle — check which is active.
+- handle: unswvolleyball
+  category: Netball / volleyball at the three unis
+  note: UNSW Volleyball Club 🏐.
+- handle: unswtkd
+  category: Netball / volleyball at the three unis
+  note: UNSW Taekwondo — 4x national champions ('22-'25), open sign-ups.
+- handle: utsjitsu
+  category: Netball / volleyball at the three unis
+  note: UTS Jitsu — Japanese Jiu-Jitsu, self-defence + fitness.
+- handle: sydhikingclub
+  category: Outdoors
+  note: Sydney Hiking Club.
+- handle: sydneyhikingclub
+  category: Outdoors
+  note: Near-duplicate of above — check which is active.
+- handle: sydneymuslimhikingclub
+  category: Outdoors
+  note: Sydney Muslim Hiking Club (SMHC).
+- handle: sumahjong
+  category: Games / niche interest
+  note: Sydney University Mahjong Society (USYD).
+- handle: utsmahjong
+  category: Games / niche interest
+  note: Mahjong@UTS — 1.9K followers.
+- handle: unswmcbsoc
+  category: Games / niche interest
+  note: UNSW Mahjong and Chinese Boardgame Society — 10+ mutual follows, most active of the UNSW mahjong
+    handles.
+- handle: sydney_sparrows
+  category: Games / niche interest
+  note: Sydney Sparrows Mahjong.
+- handle: mahjong_east
+  category: Games / niche interest
+  note: Mahjong East Sydney.
+- handle: speeddatingsydney
+  category: Dating / speed-friending (adjacent — verify age fit)
+  note: Sydney speed dating.
+- handle: sydneyspeeddating
+  category: Dating / speed-friending (adjacent — verify age fit)
+  note: Near-duplicate — check which is active.
+- handle: sydneyspeeddating28
+  category: Dating / speed-friending (adjacent — verify age fit)
+  note: Another near-duplicate.
+- handle: sydneyspeedos
+  category: Dating / speed-friending (adjacent — verify age fit)
+  note: Speed Dating Sydney.
+- handle: gayspeedatingsydney
+  category: Dating / speed-friending (adjacent — verify age fit)
+  note: Gay speed dating — LGBTQ+ specific.
+- handle: sydneysinglesevents
+  category: Dating / speed-friending (adjacent — verify age fit)
+  note: Singles social events — one related result (`sydney_over_50s`) skews older, so verify this one's
+    target age group.
+- handle: usydpostgradsocial
+  category: University / postgrad social
+  note: University of Sydney Postgraduate Social Club.
+- handle: usyd_susmi
+  category: University / postgrad social
+  note: Sydney University Society of Medical Innovation — narrower (health/med students), but active social
+    events.
+- handle: usuboard
+  category: University / postgrad social
+  note: University of Sydney Union — the umbrella student org, runs/promotes most USYD clubs & societies.
+- handle: arcunsw
+  category: University / postgrad social
+  note: Arc — UNSW Student Life. Verified, 36.3K followers. UNSW's umbrella student org (clubs, sport,
+    wellness all sit under this).
+- handle: arcsportunsw
+  category: University / postgrad social
+  note: Arc Sport UNSW — UNSW's sport-clubs arm specifically.
+- handle: arccreativeunsw
+  category: University / postgrad social
+  note: Arc Creative UNSW — arts/creative societies arm.
+- handle: arcwellnessunsw
+  category: University / postgrad social
+  note: Arc Wellness UNSW.
+- handle: activateuts
+  category: University / postgrad social
+  note: ActivateUTS — UTS's umbrella student org (clubs & societies), 74+ mutual follows in this list's
+    network.
+- handle: execclubhub
+  category: University / postgrad social
+  note: ActivateUTS Exec ClubHub — UTS club-committee network, good for finding niche UTS clubs.
+- handle: activateutswellbeing
+  category: University / postgrad social
+  note: ActivateUTS Wellbeing.
+- handle: usydsuams
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: Sydney University Association of Malaysian Students (SUAMS).
+- handle: sssusyd
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: Singapore Students' Society, USYD.
+- handle: vsausyd
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: VSA (Vietnamese Students' Association) at University of Sydney — 26+ mutual follows in this network,
+    active.
+- handle: vsaunsw
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: VSA at UNSW — 20+ mutual follows.
+- handle: vsauts
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: VSA at UTS — 23+ mutual follows.
+- handle: vsansw
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: VSA New South Wales — the state umbrella above the three uni chapters. Est. 1991, 931 followers.
+- handle: unswssa
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: UNSW Singapore Students Association (SSA).
+- handle: unswmso
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: '**Found it** — Malaysian Students'' Organisation at UNSW. Est. 1980, 2,278 followers, 1,000 posts.
+    This was the UNSW Malaysian-society gap from before.'
+- handle: nsaunsw
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: Nippon (Japanese) Students Association UNSW.
+- handle: unswhksa
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: UNSW Hong Kong Student Association. Est. 2007.
+- handle: unsw.ksa
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: UNSW Korean Students Association.
+- handle: unswkpop
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: UNSW Kpop Society — home of the KNTQ dance crew, founded 2011.
+- handle: utsanime
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: anime@UTS — official anime society, events + cosplay + Discord.
+- handle: jassuts
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: JASS UTS — Japanese & Australian Student Society, cultural exchange focus.
+- handle: wasabi_usyd
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: WASABI USYD — Japanese food/social/cultural events + language workshops. 4.1K followers.
+- handle: unswfoodlovers
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: UNSW Food Lovers Society — events, restaurant discounts, free food. 4K followers.
+- handle: masca_nsw
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: Malaysian Students' Council of Australia, NSW — the *peak* Malaysian student body across all Sydney
+    unis (sits above `@usydsuams`/`@unswmso`), 1,950 followers, very active (1,169 posts).
+- handle: masca_national
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: MASCA national — the umbrella above `@masca_nsw`, nonprofit, 2,425 followers.
+- handle: jam.mq
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: JAM — Japanese Association at Macquarie University. A 4th uni to round out USYD/UNSW/UTS/MQ.
+- handle: jcn_usyd
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: USYD Japan Career Network — career-leaning but runs student exchange/social events too.
+- handle: jss_usyd
+  category: Asian nationality/cultural societies (USYD / UNSW / UTS)
+  note: JSS — Japanese Student Society, USYD's officially-recognised Japanese-students club (distinct
+    from `@wasabi_usyd` and `@jcn_usyd`).
+- handle: community_sydney_japanese
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: '"AU''s Largest Japanese Group" — weekly Friday meetups + Saturday nightclub events, 4.1K followers,
+    aimed at students/working-holiday/international, not just uni-affiliated. Strong pick.'
+- handle: nipponnightevents
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: Nippon Night — recurring Japanese/international meetup nightlife series, 3.7K followers, ticketed
+    events roughly monthly.
+- handle: sydneyjpopnights
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: Sydney J-Pop Nights — J-pop themed party/club nights, NPO, 1.7K followers.
+- handle: matsuri_in_sydney
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: Matsuri Japan Festival — annual big Japanese festival (Wentworth Park), 2.3K followers.
+- handle: ajs_nsw
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: Australia-Japan Society NSW — established NPO since 1968, more formal cultural-exchange events.
+- handle: sakkie_sydney
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: Japanese culture experience events — karaoke nights, cosplay/anime-adjacent, 483 followers, niche
+    but very on-theme for "interesting activities."
+- handle: yuzu_nipponsydney
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: Small (161 followers) but active Japanese social community aimed at working-holiday/students/permanent
+    residents in Sydney.
+- handle: japanese_popups_sydney
+  category: Japanese community & events (Sydney-wide, not uni-bound)
+  note: Japanese pop-up markets/workshops — food, handmade goods, self-care events.
+- handle: kpop_sydney
+  category: Asian-interest social (beyond uni societies)
+  note: KPOP Sydney — documents/promotes K-pop meetup events in Sydney. Small (15 followers) but real,
+    active posting.
+- handle: sydneyasianfoodie
+  category: Asian-interest social (beyond uni societies)
+  note: Personal Asian food/cafe explorer in Sydney (136 followers) — more a foodie diary than an events
+    club, but a good account to find where the food-social crowd hangs out.
+- handle: kpopsocial.sydney
+  category: Asian-interest social (beyond uni societies)
+  note: '"Kpop Social Sydney" — brand new, 0 posts, "coming 2025." Follow now to catch it when it launches,
+    don''t expect events yet.'
+- handle: opmsydney
+  category: Party / general-social finds (via the same collab-tag pass)
+  note: Large EDM/house/trance party promoter — recurring events at Marquee, The Star. 11.4K followers,
+    3.6K posts. Not confirmed as Asian-audience-specific despite the OPM name, but tagged by `@chopsticks_usyd`'s
+    network.
+- handle: gapmash
+  category: Party / general-social finds (via the same collab-tag pass)
+  note: '"University Social Planner" — cross-uni events/connections account, followed by `@utsmahjong`
+    and `@utsmunclub`.'
+- handle: usyd.zap
+  category: Party / general-social finds (via the same collab-tag pass)
+  note: A1Zap @ USYD — campus mini-apps/events feed (whatsonusyd.com), the account that reposts USYD club
+    events most often in this network. Good one to follow just for event discovery.
+- handle: unsw.zap
+  category: Party / general-social finds (via the same collab-tag pass)
+  note: A1Zap @ UNSW — same events-aggregator concept, UNSW chapter. Reposts `@unswkpop` and other UNSW
+    club events constantly.
+- handle: sydney_young_professionals
+  category: Young professionals (adjacent, more career-networking than party)
+  note: Sydney Young Professionals.
