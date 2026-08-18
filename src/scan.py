@@ -24,15 +24,61 @@ def _is_upcoming(date_iso, today):
     return today <= event_date <= today + timedelta(days=EVENT_WINDOW_DAYS)
 
 
+_ALT_DATE_RE = re.compile(r"\bon ([A-Z][a-z]+ \d{1,2}, \d{4})")
+
+
+def _parse_alt_date(alt_text):
+    """Instagram's own alt text on grid thumbnails embeds the real post
+    date for photos/carousels, e.g. 'Photo by X on June 23, 2022.' (Reels
+    usually don't get one.) None if no date is present or parseable."""
+    m = _ALT_DATE_RE.search(alt_text)
+    if not m:
+        return None
+    try:
+        return datetime.strptime(m.group(1), "%B %d, %Y").date()
+    except ValueError:
+        return None
+
+
 def _post_urls_for_account(handle, tree_text):
-    """DOM order on a profile grid == most-recent-first."""
-    pattern = re.compile(r"-\s*/url:\s*(/" + re.escape(handle) + r"/(?:p|reel)/[A-Za-z0-9_-]+/)")
-    seen = []
+    """DOM order on a profile grid is normally most-recent-first, but
+    pinned posts (Instagram allows up to 3) stay at the top regardless of
+    age. We use the real dates embedded in each thumbnail's alt text to
+    detect dated posts sitting out of chronological order at the front of
+    the grid and move them behind the actual newest one. Undated entries
+    (typically Reels) are left in place since we have no evidence either way."""
+    pattern = re.compile(
+        r'link "([^"]*)"[^\n]*\n\s*-\s*/url:\s*(/' + re.escape(handle) + r"/(?:p|reel)/[A-Za-z0-9_-]+/)"
+    )
+    entries = []
+    seen = set()
     for m in pattern.finditer(tree_text):
-        url = m.group(1)
-        if url not in seen:
-            seen.append(url)
-    return seen
+        alt_text, url = m.group(1), m.group(2)
+        if url in seen:
+            continue
+        seen.add(url)
+        entries.append((url, _parse_alt_date(alt_text)))
+
+    dated = [d for _, d in entries if d is not None]
+    if not dated:
+        return [url for url, _ in entries]
+
+    newest_date = max(dated)
+    pinned = []
+    i = 0
+    while i < len(entries) and entries[i][1] is not None and entries[i][1] < newest_date:
+        pinned.append(entries[i])
+        i += 1
+
+    if pinned:
+        log.info(
+            "@%s: %d post(s) at the top of the grid are older than the newest dated post — "
+            "likely pinned, moving behind it: %s",
+            handle, len(pinned), ", ".join(url for url, _ in pinned),
+        )
+
+    ordered = entries[i:] + pinned
+    return [url for url, _ in ordered]
 
 
 def _process_post(handle, path):
