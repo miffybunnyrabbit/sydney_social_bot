@@ -8,6 +8,7 @@ Usage: python test_scan.py [N_ACCOUNTS] [M_EVENTS]
 """
 
 import sys
+from datetime import date
 
 from src import config, extract, notify, scan, vb_client
 
@@ -49,13 +50,16 @@ for account in accounts:
         continue
 
     try:
-        event = extract.extract_event(shot_path, caption, handle)
-        if event:
+        today = date.today()
+        event = extract.extract_event(shot_path, caption, handle, reference_date=today)
+        if not event:
+            print("  not an event post")
+        elif not scan._is_upcoming(event.get("date_iso", ""), today):
+            print(f"  EVENT outside next {scan.EVENT_WINDOW_DAYS} days, skipping: {event.get('title')} (date_iso={event.get('date_iso')!r})")
+        else:
             print(f"  EVENT: {event.get('title')}")
             notify.send_photo(shot_path, notify.format_event(handle, event, post_url))
             sent += 1
-        else:
-            print("  not an event post")
     finally:
         shot_path.unlink(missing_ok=True)
 

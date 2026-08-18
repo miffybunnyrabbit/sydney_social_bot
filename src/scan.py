@@ -4,10 +4,24 @@ details from the genuinely-new ones, and notify Telegram."""
 import logging
 import re
 import time
+from datetime import date, datetime, timedelta
 
 from . import config, extract, notify, state, vb_client
 
 log = logging.getLogger(__name__)
+
+EVENT_WINDOW_DAYS = 7
+
+
+def _is_upcoming(date_iso, today):
+    """True if date_iso falls within [today, today + EVENT_WINDOW_DAYS]."""
+    if not date_iso:
+        return False
+    try:
+        event_date = datetime.strptime(date_iso, "%Y-%m-%d").date()
+    except ValueError:
+        return False
+    return today <= event_date <= today + timedelta(days=EVENT_WINDOW_DAYS)
 
 
 def _post_urls_for_account(handle, tree_text):
@@ -35,11 +49,17 @@ def _process_post(handle, path):
         return
 
     try:
-        event = extract.extract_event(shot_path, caption, handle)
-        if event:
-            notify.send_photo(shot_path, notify.format_event(handle, event, post_url))
-        else:
+        today = date.today()
+        event = extract.extract_event(shot_path, caption, handle, reference_date=today)
+        if not event:
             log.info("Not an event post: %s", post_url)
+        elif not _is_upcoming(event.get("date_iso", ""), today):
+            log.info(
+                "Event outside next %d days, skipping: %s (date_iso=%r)",
+                EVENT_WINDOW_DAYS, post_url, event.get("date_iso"),
+            )
+        else:
+            notify.send_photo(shot_path, notify.format_event(handle, event, post_url))
     finally:
         shot_path.unlink(missing_ok=True)
 
