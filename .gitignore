@@ -1,5 +1,6 @@
 .env
 state.json
+main.lock
 logs/*.log
 __pycache__/
 *.pyc
